@@ -1,0 +1,158 @@
+/*********************************************************************************
+ * 文件名  ：main.c
+ * 描述    ：        
+ * 硬件连接：
+ * 4针OLED：GND -> GND; VCC -> 3.3V; SCL -> PB6; SDA -> PB7;
+ * 气压传感器：VCC -> 5V; GND -> GND; AO -> PA1; 
+ * USB转串口模块：GND -> GND; RX -> PA9; TX -> PA10; 
+ * 功能描述：测量气压值HT1625断码屏显示；
+             串口接收测量所得的气压值（波特率115200）；
+   使用时先进行零点和满量程校准，依据校准值调整 Voltage_0   Voltage_40
+**********************************************************************************/
+#include "stm32f10x.h"
+#include "delay.h"
+#include "usart.h"
+#include "adc.h"
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include "oled.h"
+
+int ADC;
+float Pressure_V=0.0;
+long pressure=0;
+char V_disbuff[5]={0}; 
+char P_disbuff[6]={0};
+
+const float VCC =3300;         // ADC参考电压为mV
+
+const float Voltage_0 =160;    // 零点电压值mV  校准时需修改
+const float Voltage_40 =3750 ; // 满量程输出电压值mV  需修改
+
+long map(long OutputValue, long PositivePressure, float K_Value); 
+//long map(long x, long in_min, long in_max, long out_min, long out_max);
+//void BEND_Value_Conversion();
+
+void BEND_Value_Conversion()
+{
+		/*显示电压值*/
+		V_disbuff[0]=(long int)(ADC)/1000+'0';
+		V_disbuff[1]=(long int)(ADC)%1000/100+'0';	
+		V_disbuff[2]=(long int)(ADC)%100/10+'0';
+		V_disbuff[3]=(long int)(ADC)%10+'0';	
+//	OLED_ShowString(18,36,V_disbuff,16,0);
+//	OLED_Refresh();
+    /*显示气压值*/
+		if(pressure<=0){pressure=0;}
+		if(pressure>=40000){pressure=40000;}
+		
+		P_disbuff[0]=(int)((pressure))/10000+'0';	
+		P_disbuff[1]=(int)((pressure))%10000/1000+'0';
+		P_disbuff[2]=(int)((pressure))%1000/100+'0';
+		P_disbuff[3]=(int)((pressure))%100/10+'0';
+		P_disbuff[4]=(int)((pressure))%10+'0';
+		
+}
+
+
+
+int main(void)
+{		
+		char i;
+		delay_init();	
+		NVIC_Configuration(); //设置NVIC中断分组2:2位抢占优先级，2位响应优先级
+		uart_init(115200);	    //串口初始化为115200
+		Adc_Init();
+		/*-------------------------------OLED---------------------------------*/
+		//以下三条是初始化OLED
+	OLED_Init();
+	OLED_ColorTurn(0);//0正常显示，1 反色显示
+  OLED_DisplayTurn(0);//0正常显示 1 屏幕翻转显示
+	
+	
+
+	 // OLED_ShowPicture(0,0,128,64,F16x16,1);
+		OLED_Refresh();
+		delay_ms(2500);
+		OLED_Clear();
+		
+			OLED_ShowChinese(36,36,11,16,0);//大
+    	OLED_ShowChinese(54,36,12,16,0);//道
+  		OLED_ShowChinese(72,36,13,16,0);//愁
+  		OLED_ShowChinese(90,36,14,16,0);//勤
+			OLED_Refresh();
+			delay_ms(1000);
+		  //OLED_Clear();
+			//OLED_ShowString(8,16,"caihongbinfei",16,0);
+			//OLED_Refresh();
+		/*-------------------------------OLED---------------------------------*/
+		
+		while(1)
+		{
+#if 1
+			 for(i = 0; i < 2; i++) {
+        int adcValue = Get_Adc_Average(i, 20); // 读取每个通道的平均值
+        long pressure = map(adcValue, 0.2, 0.0125); // 转换为压力值
+        printf("Channel %d: Voltage: %d mV, Pressure: %ld pa\r\n", i, adcValue, pressure);
+			OLED_Clear();
+			OLED_ShowString(8,16,"pressure",16,0);
+			OLED_Refresh();
+    }
+			delay_ms(500);
+#endif		
+//			
+//			ADC = Get_Adc_Average(0,10);	//10次平均值
+//			pressure = map(ADC, 0.2,0.0125); 
+//			//pressure = (ADC - 0.2) / 0.025;
+//			printf("----摩托车四缸平衡仪----\r\n");
+//			printf("Voltage:%d mV\r\n",ADC);
+//			OLED_Clear();
+//			OLED_ShowString(8,16,"pressure",16,0);
+//			OLED_Refresh();
+//			printf("Pressure:%ld pa\r\n",pressure);	
+			BEND_Value_Conversion();
+			delay_ms(500);
+		}
+
+}
+/*
+3.3V 供电: 压力=(输出值-0.2)/K
+5V 供电: 压力=(输出值-0.5)/K
+
+         K 值 VS 压力量程
+量程 (kPa)        3.3（V）    5（V）
+0~100             0.025        0.04
+*/
+long map(long OutputValue, long PositivePressure, float K_Value) 
+{
+   return (OutputValue - PositivePressure) / K_Value;
+}
+
+
+//long map(long x, long in_min, long in_max, long out_min, long out_max) 
+//{
+//   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+//}
+
+#if 0
+void BEND_Value_Conversion()
+{
+		/*显示电压值*/
+		V_disbuff[0]=(long int)(Pressure_V)/1000+'0';
+		V_disbuff[1]=(long int)(Pressure_V)%1000/100+'0';	
+		V_disbuff[2]=(long int)(Pressure_V)%100/10+'0';
+		V_disbuff[3]=(long int)(Pressure_V)%10+'0';	
+		printf("显示电压值 = %x%x%x%x\n",V_disbuff[0],V_disbuff[1],V_disbuff[2],V_disbuff[3]);
+	
+    /*显示气压值*/
+		if(pressure<=0){pressure=0;}
+		if(pressure>=40000){pressure=40000;}
+		
+		P_disbuff[0]=(int)((pressure))/10000+'0';	
+		P_disbuff[1]=(int)((pressure))%10000/1000+'0';
+		P_disbuff[2]=(int)((pressure))%1000/100+'0';
+		P_disbuff[3]=(int)((pressure))%100/10+'0';
+		P_disbuff[4]=(int)((pressure))%10+'0';
+		printf("显示气压值 = %x%x%x%x%x\n",V_disbuff[0],V_disbuff[1],V_disbuff[2],V_disbuff[3],V_disbuff[4]);
+}
+#endif

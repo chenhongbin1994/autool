@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "hide-files.files": [],
+        "files.associations": {
+            "oled.h": "c"
+        }
+    },
+    "extensions": {}
+}

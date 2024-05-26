@@ -1,0 +1,369 @@
+Dependencies for Project 'main', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\main.c)(0x66502B7B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (system_stm32f10x.h)(0x621AFC52)
+I (stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (..\SYSTEM\delay\delay.h)(0x621AFC94)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+I (..\SYSTEM\usart\usart.h)(0x6641F7DB)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (..\MyCode\ADC\adc.h)(0x664EEBE8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5E8E2EB2)
+I (..\MyCode\oled.h)(0x6642D943)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (..\MyCode\LED\LED.h)(0x664E9BB7)
+I (..\MyCode\BUZ\buzzer.h)(0x664FF774)
+I (..\USER\typedefs.h)(0x589A8216)
+I (..\STM32_FWLIB\inc\stm32f10x_tim.h)(0x621AFC8C)
+I (common.h)(0x664F1A52)
+I (gpio_defs.h)(0x664F0BE5)
+F (.\stm32f10x_it.c)(0x621AFC51)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
+I (stm32f10x_it.h)(0x621AFC51)
+I (stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (system_stm32f10x.h)(0x621AFC52)
+I (stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (.\system_stm32f10x.c)(0x621AFC51)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\system_stm32f10x.o --omf_browse ..\obj\system_stm32f10x.crf --depend ..\obj\system_stm32f10x.d)
+I (stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (system_stm32f10x.h)(0x621AFC52)
+I (stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (.\gpio_defs.h)(0x664F0BE5)()
+F (.\common.c)(0x66120ED2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\common.o --omf_browse ..\obj\common.crf --depend ..\obj\common.d)
+I (common.h)(0x664F1A52)
+I (typedefs.h)(0x589A8216)
+I (stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (system_stm32f10x.h)(0x621AFC52)
+I (stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (gpio_defs.h)(0x664F0BE5)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+F (..\MyCode\ADC\adc.c)(0x664EE9FC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+I (..\MyCode\ADC\adc.h)(0x664EEBE8)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (..\SYSTEM\delay\delay.h)(0x621AFC94)
+F (..\MyCode\oled.c)(0x6642D943)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\oled.o --omf_browse ..\obj\oled.crf --depend ..\obj\oled.d)
+I (..\MyCode\oled.h)(0x6642D943)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (..\MyCode\oledfont.h)(0x6642D5C1)
+I (..\SYSTEM\delay\delay.h)(0x621AFC94)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+F (..\MyCode\LCD\HT61666_LCD.c)(0x6646FF93)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\ht61666_lcd.o --omf_browse ..\obj\ht61666_lcd.crf --depend ..\obj\ht61666_lcd.d)
+I (..\MyCode\LCD\HT61666_LCD.h)(0x6646D641)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (..\SYSTEM\delay\delay.h)(0x621AFC94)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+F (..\MyCode\led\LED.c)(0x664E9B59)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
+I (..\MyCode\led\LED.h)(0x664E9BB7)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\MyCode\BUZ\buzzer.c)(0x665005FB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\buzzer.o --omf_browse ..\obj\buzzer.crf --depend ..\obj\buzzer.d)
+I (..\MyCode\BUZ\buzzer.h)(0x664FF774)
+I (..\USER\typedefs.h)(0x589A8216)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_tim.h)(0x621AFC8C)
+F (..\CORE\core_cm3.c)(0x621AFC26)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\core_cm3.o --omf_browse ..\obj\core_cm3.crf --depend ..\obj\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+F (..\CORE\startup_stm32f10x_md.s)(0x621AFC29)(--cpu Cortex-M3 -g --apcs=interwork -IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 533" --pd "STM32F10X_MD SETA 1"--list .\startup_stm32f10x_md.lst --xref -o ..\obj\startup_stm32f10x_md.o --depend ..\obj\startup_stm32f10x_md.d)
+F (..\STM32_FWLIB\src\misc.c)(0x621AFC8D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+F (..\STM32_FWLIB\src\stm32f10x_gpio.c)(0x621AFC90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_gpio.o --omf_browse ..\obj\stm32f10x_gpio.crf --depend ..\obj\stm32f10x_gpio.d)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_rcc.c)(0x621AFC92)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_rcc.o --omf_browse ..\obj\stm32f10x_rcc.crf --depend ..\obj\stm32f10x_rcc.d)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_usart.c)(0x621AFC93)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_usart.o --omf_browse ..\obj\stm32f10x_usart.crf --depend ..\obj\stm32f10x_usart.d)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_adc.c)(0x621AFC8D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_adc.o --omf_browse ..\obj\stm32f10x_adc.crf --depend ..\obj\stm32f10x_adc.d)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_i2c.c)(0x621AFC90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_i2c.o --omf_browse ..\obj\stm32f10x_i2c.crf --depend ..\obj\stm32f10x_i2c.d)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_dma.c)(0x621AFC8F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_dma.o --omf_browse ..\obj\stm32f10x_dma.crf --depend ..\obj\stm32f10x_dma.d)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_exti.c)(0x621AFC8F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_exti.o --omf_browse ..\obj\stm32f10x_exti.crf --depend ..\obj\stm32f10x_exti.d)
+I (..\STM32_FWLIB\inc\stm32f10x_exti.h)(0x621AFC88)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_flash.c)(0x621AFC90)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_flash.o --omf_browse ..\obj\stm32f10x_flash.crf --depend ..\obj\stm32f10x_flash.d)
+I (..\STM32_FWLIB\inc\stm32f10x_flash.h)(0x621AFC87)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_rtc.c)(0x621AFC92)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_rtc.o --omf_browse ..\obj\stm32f10x_rtc.crf --depend ..\obj\stm32f10x_rtc.d)
+I (..\STM32_FWLIB\inc\stm32f10x_rtc.h)(0x621AFC8B)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_spi.c)(0x621AFC92)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_spi.o --omf_browse ..\obj\stm32f10x_spi.crf --depend ..\obj\stm32f10x_spi.d)
+I (..\STM32_FWLIB\inc\stm32f10x_spi.h)(0x621AFC8C)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\STM32_FWLIB\src\stm32f10x_tim.c)(0x621AFC93)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_tim.o --omf_browse ..\obj\stm32f10x_tim.crf --depend ..\obj\stm32f10x_tim.d)
+I (..\STM32_FWLIB\inc\stm32f10x_tim.h)(0x621AFC8C)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\SYSTEM\delay\delay.c)(0x621AFC94)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (..\SYSTEM\delay\delay.h)(0x621AFC94)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\SYSTEM\sys\sys.c)(0x621AFC95)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+F (..\SYSTEM\usart\usart.c)(0x66442F4F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I ..\USER -I ..\CORE -I ..\STM32_FWLIB\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\MyCode\Buzzer -I ..\MyCode\HX711 -I ..\MyCode\TFT -I ..\MyCode\KEY -I ..\MyCode\FSR -I ..\MyCode\ADC -I ..\MyCode -I ..\MyCode\LCD -I ..\MyCode\BUZ -I ..\MyCode\TIM -I ..\MyCode\LED-IC:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+I (..\SYSTEM\sys\sys.h)(0x621AFC95)
+I (..\USER\stm32f10x.h)(0x621AFC4F)
+I (..\CORE\core_cm3.h)(0x621AFC26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x621AFC52)
+I (..\USER\stm32f10x_conf.h)(0x621AFC51)
+I (..\STM32_FWLIB\inc\stm32f10x_adc.h)(0x621AFC85)
+I (..\STM32_FWLIB\inc\stm32f10x_dma.h)(0x621AFC8B)
+I (..\STM32_FWLIB\inc\stm32f10x_gpio.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_i2c.h)(0x621AFC89)
+I (..\STM32_FWLIB\inc\stm32f10x_rcc.h)(0x621AFC8A)
+I (..\STM32_FWLIB\inc\stm32f10x_usart.h)(0x621AFC8C)
+I (..\STM32_FWLIB\inc\misc.h)(0x621AFC85)
+I (..\SYSTEM\usart\usart.h)(0x6641F7DB)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)

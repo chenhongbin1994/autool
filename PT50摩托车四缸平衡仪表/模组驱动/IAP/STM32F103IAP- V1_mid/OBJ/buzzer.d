@@ -1,0 +1,17 @@
+..\obj\buzzer.o: ..\MyCode\BUZ\buzzer.c
+..\obj\buzzer.o: ..\MyCode\BUZ\buzzer.h
+..\obj\buzzer.o: ..\USER\typedefs.h
+..\obj\buzzer.o: ..\USER\stm32f10x.h
+..\obj\buzzer.o: ..\CORE\core_cm3.h
+..\obj\buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\buzzer.o: ..\USER\system_stm32f10x.h
+..\obj\buzzer.o: ..\USER\stm32f10x_conf.h
+..\obj\buzzer.o: ..\STM32_FWLIB\inc\stm32f10x_adc.h
+..\obj\buzzer.o: ..\USER\stm32f10x.h
+..\obj\buzzer.o: ..\STM32_FWLIB\inc\stm32f10x_dma.h
+..\obj\buzzer.o: ..\STM32_FWLIB\inc\stm32f10x_gpio.h
+..\obj\buzzer.o: ..\STM32_FWLIB\inc\stm32f10x_i2c.h
+..\obj\buzzer.o: ..\STM32_FWLIB\inc\stm32f10x_rcc.h
+..\obj\buzzer.o: ..\STM32_FWLIB\inc\stm32f10x_usart.h
+..\obj\buzzer.o: ..\STM32_FWLIB\inc\misc.h
+..\obj\buzzer.o: ..\USER\gpio_defs.h

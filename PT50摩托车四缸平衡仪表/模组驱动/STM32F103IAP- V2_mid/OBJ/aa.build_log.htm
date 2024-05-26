@@ -1,0 +1,98 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: hfsdk dfd, fdsf, LIC=PE7DL-0K51V-WF0I7-E3IHK-PT153-9P3M4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+C:\Users\IBM\Desktop\PT50摩托车四缸平衡仪表\模组驱动\STM32F103IAP- V2_mid\USER\main.uvprojx
+Project File Date:  05/24/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'PT50'
+compiling stm32f10x_it.c...
+compiling LED.c...
+..\MyCode\led\LED.c(30): warning:  #1-D: last line of file ends without a newline
+  }
+..\MyCode\led\LED.c: 1 warning, 0 errors
+compiling common.c...
+compiling system_stm32f10x.c...
+compiling HT61666_LCD.c...
+..\MyCode\LCD\HT61666_LCD.h(419): warning:  #1295-D: Deprecated declaration LCD_Delay - give arg types
+  void LCD_Delay( );
+..\MyCode\LCD\HT61666_LCD.c(236): warning:  #177-D: variable "addr"  was declared but never referenced
+  	uint8_t addr = 0,i = 0;
+..\MyCode\LCD\HT61666_LCD.c: 2 warnings, 0 errors
+compiling adc.c...
+compiling oled.c...
+compiling main.c...
+assembling startup_stm32f10x_md.s...
+compiling core_cm3.c...
+compiling buzzer.c...
+compiling battery.c...
+..\MyCode\BATTERY\battery.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\MyCode\LCD\HT61666_LCD.h(419): warning:  #1295-D: Deprecated declaration LCD_Delay - give arg types
+  void LCD_Delay( );
+..\MyCode\BATTERY\battery.c(293): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\MyCode\BATTERY\battery.c(22): warning:  #550-D: variable "Screen_RF_Data2"  was set but never used
+  static uint8_t Screen_RF_Data2 = 0;
+..\MyCode\BATTERY\battery.c(23): warning:  #550-D: variable "Screen_RF_Data3"  was set but never used
+  static uint8_t Screen_RF_Data3 = 0;
+..\MyCode\BATTERY\battery.c(24): warning:  #550-D: variable "Screen_RF_Data4"  was set but never used
+  static uint8_t Screen_RF_Data4 = 0;
+..\MyCode\BATTERY\battery.c: 6 warnings, 0 errors
+compiling misc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling delay.c...
+compiling stm32f10x_tim.c...
+compiling sys.c...
+compiling usart.c...
+linking...
+Program Size: Code=16752 RO-data=8268 RW-data=52 ZI-data=3012  
+FromELF: creating hex file...
+After Build - User command #1: C:\Keil_v5\ARM\ARMCC\bin\fromelf.exe    --bin -o  ..\OBJ\aa.bin ..\OBJ\aa.axf
+"..\OBJ\aa.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\IBM\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
