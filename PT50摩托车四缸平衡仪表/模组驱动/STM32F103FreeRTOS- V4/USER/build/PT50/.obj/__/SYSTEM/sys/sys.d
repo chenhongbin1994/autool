@@ -1,0 +1,14 @@
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: .\..\SYSTEM\sys\sys.c
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: .\..\SYSTEM\sys\sys.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: .\stm32f10x.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../CORE/core_cm3.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: .\system_stm32f10x.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: .\stm32f10x_conf.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../STM32_FWLIB/inc/stm32f10x_adc.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: .\stm32f10x.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../STM32_FWLIB/inc/stm32f10x_dma.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../STM32_FWLIB/inc/stm32f10x_gpio.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../STM32_FWLIB/inc/stm32f10x_i2c.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../STM32_FWLIB/inc/stm32f10x_rcc.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../STM32_FWLIB/inc/stm32f10x_usart.h
+.\build\PT50\.obj\__\SYSTEM\sys\sys.o: ../STM32_FWLIB/inc/misc.h

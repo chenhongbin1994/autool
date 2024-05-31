@@ -1,0 +1,20 @@
+>>> cc
+
+".\..\MyCode\LCD\HT61666_LCD.c", line 236: Warning:  #177-D: variable "addr"  was declared but never referenced
+  	uint8_t addr = 0,i = 0;
+  	        ^
+.\..\MyCode\LCD\HT61666_LCD.c: 1 warning, 0 errors
+".\..\MyCode\BATTERY\battery.c", line 22: Warning:  #550-D: variable "Screen_RF_Data2"  was set but never used
+  static uint8_t Screen_RF_Data2 = 0;
+                 ^
+".\..\MyCode\BATTERY\battery.c", line 23: Warning:  #550-D: variable "Screen_RF_Data3"  was set but never used
+  static uint8_t Screen_RF_Data3 = 0;
+                 ^
+".\..\MyCode\BATTERY\battery.c", line 24: Warning:  #550-D: variable "Screen_RF_Data4"  was set but never used
+  static uint8_t Screen_RF_Data4 = 0;
+                 ^
+.\..\MyCode\BATTERY\battery.c: 3 warnings, 0 errors
+
+>>> ld
+
+Program Size: Code=13252 RO-data=8336 RW-data=112 ZI-data=3208  

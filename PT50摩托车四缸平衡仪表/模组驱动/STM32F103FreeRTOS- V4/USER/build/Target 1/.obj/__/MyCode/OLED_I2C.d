@@ -1,0 +1,17 @@
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: .\..\MyCode\OLED_I2C.c
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: .\..\MyCode\OLED_I2C.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: .\stm32f10x.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../CORE/core_cm3.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: .\system_stm32f10x.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: .\stm32f10x_conf.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../STM32_FWLIB/inc/stm32f10x_adc.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: .\stm32f10x.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../STM32_FWLIB/inc/stm32f10x_dma.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../STM32_FWLIB/inc/stm32f10x_gpio.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../STM32_FWLIB/inc/stm32f10x_i2c.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../STM32_FWLIB/inc/stm32f10x_rcc.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../STM32_FWLIB/inc/stm32f10x_usart.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../STM32_FWLIB/inc/misc.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../SYSTEM/delay/delay.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: ../SYSTEM/sys/sys.h
+.\build\Target 1\.obj\__\MyCode\OLED_I2C.o: .\..\MyCode\codetab.h

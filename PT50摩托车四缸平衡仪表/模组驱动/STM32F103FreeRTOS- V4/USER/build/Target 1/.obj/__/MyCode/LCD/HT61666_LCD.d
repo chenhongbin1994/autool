@@ -1,0 +1,16 @@
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: .\..\MyCode\LCD\HT61666_LCD.c
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: .\..\MyCode\LCD\HT61666_LCD.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: .\stm32f10x.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../CORE/core_cm3.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: .\system_stm32f10x.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: .\stm32f10x_conf.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../STM32_FWLIB/inc/stm32f10x_adc.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: .\stm32f10x.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../STM32_FWLIB/inc/stm32f10x_dma.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../STM32_FWLIB/inc/stm32f10x_gpio.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../STM32_FWLIB/inc/stm32f10x_i2c.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../STM32_FWLIB/inc/stm32f10x_rcc.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../STM32_FWLIB/inc/stm32f10x_usart.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../STM32_FWLIB/inc/misc.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../SYSTEM/delay/delay.h
+.\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o: ../SYSTEM/sys/sys.h

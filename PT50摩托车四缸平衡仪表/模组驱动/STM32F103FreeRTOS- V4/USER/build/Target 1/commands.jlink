@@ -1,0 +1,6 @@
+r
+halt
+loadfile "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure\USER\build\Target 1\main.hex"
+r
+go
+exit

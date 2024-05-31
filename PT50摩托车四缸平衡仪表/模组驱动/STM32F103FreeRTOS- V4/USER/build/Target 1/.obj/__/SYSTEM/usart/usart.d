@@ -1,0 +1,15 @@
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: .\..\SYSTEM\usart\usart.c
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../SYSTEM/sys/sys.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: .\stm32f10x.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../CORE/core_cm3.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: .\system_stm32f10x.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: .\stm32f10x_conf.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../STM32_FWLIB/inc/stm32f10x_adc.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: .\stm32f10x.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../STM32_FWLIB/inc/stm32f10x_dma.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../STM32_FWLIB/inc/stm32f10x_gpio.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../STM32_FWLIB/inc/stm32f10x_i2c.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../STM32_FWLIB/inc/stm32f10x_rcc.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../STM32_FWLIB/inc/stm32f10x_usart.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: ../STM32_FWLIB/inc/misc.h
+.\build\Target 1\.obj\__\SYSTEM\usart\usart.o: .\..\SYSTEM\usart\usart.h

@@ -1,0 +1,10 @@
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: .\..\FreeRTOS\portable\MemMang\heap_4.c
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/FreeRTOS.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/FreeRTOSConfig.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/projdefs.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/portable.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/deprecated_definitions.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/portable/RVDS/ARM_CM3/portmacro.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/mpu_wrappers.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/task.h
+.\build\PT50\.obj\__\FreeRTOS\portable\MemMang\heap_4.o: ../FreeRTOS/include/list.h

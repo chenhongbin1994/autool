@@ -1,0 +1,12 @@
+.\build\PT50\.obj\__\FreeRTOS\timers.o: .\..\FreeRTOS\timers.c
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/FreeRTOS.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/FreeRTOSConfig.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/projdefs.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/portable.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/deprecated_definitions.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/portable/RVDS/ARM_CM3/portmacro.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/mpu_wrappers.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/task.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/list.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/queue.h
+.\build\PT50\.obj\__\FreeRTOS\timers.o: ../FreeRTOS/include/timers.h

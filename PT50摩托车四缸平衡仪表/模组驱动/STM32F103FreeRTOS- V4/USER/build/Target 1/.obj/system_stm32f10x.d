@@ -1,0 +1,13 @@
+.\build\Target 1\.obj\system_stm32f10x.o: .\system_stm32f10x.c
+.\build\Target 1\.obj\system_stm32f10x.o: .\stm32f10x.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../CORE/core_cm3.h
+.\build\Target 1\.obj\system_stm32f10x.o: .\system_stm32f10x.h
+.\build\Target 1\.obj\system_stm32f10x.o: .\stm32f10x_conf.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../STM32_FWLIB/inc/stm32f10x_adc.h
+.\build\Target 1\.obj\system_stm32f10x.o: .\stm32f10x.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../STM32_FWLIB/inc/stm32f10x_dma.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../STM32_FWLIB/inc/stm32f10x_gpio.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../STM32_FWLIB/inc/stm32f10x_i2c.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../STM32_FWLIB/inc/stm32f10x_rcc.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../STM32_FWLIB/inc/stm32f10x_usart.h
+.\build\Target 1\.obj\system_stm32f10x.o: ../STM32_FWLIB/inc/misc.h

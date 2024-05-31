@@ -1,0 +1,315 @@
+[2024-05-13 19:14:26]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I.cmsis/include -I"RTE/_Target 1" -I.eide/deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.c", line 23: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x) 
+  ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2024-05-13 19:16:32]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I.cmsis/include -I"RTE/_Target 1" -I.eide/deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.h", line 24: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x);
+  ^
+".\..\SYSTEM\usart\usart.c", line 23: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x) 
+  ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 2 errors
+
+[2024-05-13 19:17:42]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I.cmsis/include -I"RTE/_Target 1" -I.eide/deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.h", line 32: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x);
+  ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2024-05-13 19:17:59]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I.cmsis/include -I"RTE/_Target 1" -I.eide/deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.h", line 32: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x);
+  ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2024-05-13 19:18:25]	[done]
+	build successfully !
+
+[2024-05-13 19:19:00]	[done]
+	build successfully !
+
+[2024-05-13 19:23:34]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I.cmsis/include -I"RTE/_Target 1" -I.eide/deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.c", line 23: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x) 
+  ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2024-05-13 19:26:02]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I.cmsis/include -I"RTE/_Target 1" -I.eide/deps -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.c", line 23: Error:  #260-D: explicit type is missing ("int" assumed)
+  _sys_exit(int x) 
+  ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2024-05-13 19:26:22]	[done]
+	build successfully !
+
+[2024-05-13 19:27:47]	[done]
+	build successfully !
+
+[2024-05-13 19:30:15]	[done]
+	build successfully !
+
+[2024-05-15 10:42:55]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure - V2\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I"RTE/_Target 1" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.c", line 23: Error:  #260-D: explicit type is missing ("int" assumed)
+   _sys_exit(int x) 
+   ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2024-05-15 11:39:16]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103pressure - V2\SYSTEM\usart\usart.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I"RTE/_Target 1" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\SYSTEM\usart\usart.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\SYSTEM\usart\usart.d" .\..\SYSTEM\usart\usart.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\SYSTEM\usart\usart.c", line 23: Error:  #260-D: explicit type is missing ("int" assumed)
+   _sys_exit(int x) 
+   ^
+.\..\SYSTEM\usart\usart.c: 0 warnings, 1 error
+
+[2024-05-15 11:43:14]	[done]
+	build successfully !
+
+[2024-05-16 10:55:13]	compilation failed at : "c:\Users\IBM\Desktop\四缸平衡仪表\模组驱动\STM32F103coding - V3\MyCode\LCD\HT61666_LCD.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I../MyCode/LCD -I"RTE/_Target 1" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.d" .\..\MyCode\LCD\HT61666_LCD.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\MyCode\LCD\HT61666_LCD.c", line 161: Error:  #169: expected a declaration
+  	for(i =0;i<4;i++)
+  	^
+".\..\MyCode\LCD\HT61666_LCD.c", line 195: Warning:  #12-D: parsing restarts here after previous syntax error
+      LCD_CS_1();                         // CS = 1
+                ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 196: Error:  #79: expected a type specifier
+      vTaskDelay(1);    
+                 ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 196: Error:  #260-D: explicit type is missing ("int" assumed)
+      vTaskDelay(1);    
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 197: Error:  #169: expected a declaration
+  }
+  ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 227: Warning:  #12-D: parsing restarts here after previous syntax error
+      vTaskDelay(1);
+                   ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 229: Error:  #260-D: explicit type is missing ("int" assumed)
+      LCD_WR_0();                         // WR = 0
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 230: Error:  #79: expected a type specifier
+      vTaskDelay(1);
+                 ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 230: Error:  #260-D: explicit type is missing ("int" assumed)
+      vTaskDelay(1);
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 231: Error:  #260-D: explicit type is missing ("int" assumed)
+      LCD_DATA_0();                       // DATA = 1
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 232: Error:  #79: expected a type specifier
+      vTaskDelay(1);
+                 ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 232: Error:  #260-D: explicit type is missing ("int" assumed)
+      vTaskDelay(1);
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 233: Error:  #260-D: explicit type is missing ("int" assumed)
+      LCD_WR_1();                         // WR = 1
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 234: Error:  #79: expected a type specifier
+      vTaskDelay(1);
+                 ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 234: Error:  #260-D: explicit type is missing ("int" assumed)
+      vTaskDelay(1);
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 237: Error:  #169: expected a declaration
+      for(i = 0; i < 6; i++)
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 271: Warning:  #12-D: parsing restarts here after previous syntax error
+      LCD_CS_1();                         // CS = 1
+                ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 272: Error:  #79: expected a type specifier
+      vTaskDelay(1);       
+                 ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 272: Error:  #260-D: explicit type is missing ("int" assumed)
+      vTaskDelay(1);       
+      ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 273: Error:  #169: expected a declaration
+  }
+  ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 345: Warning:  #12-D: parsing restarts here after previous syntax error
+  		Data_MHz_Flag = 0;
+  		                 ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 346: Error:  #169: expected a declaration
+  	}
+  	^
+".\..\MyCode\LCD\HT61666_LCD.c", line 371: Warning:  #12-D: parsing restarts here after previous syntax error
+  				HT1621_WriteData4Bit(addr1, 0);  
+  				                              ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 372: Error:  #40: expected an identifier
+  				HT1621_WriteData4Bit(addr2,0);  
+  				                           ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 372: Error:  #260-D: explicit type is missing ("int" assumed)
+  				HT1621_WriteData4Bit(addr2,0);  
+  				^
+".\..\MyCode\LCD\HT61666_LCD.c", line 372: Error:  #92: identifier-list parameters may only be used in a function definition
+  				HT1621_WriteData4Bit(addr2,0);  
+  				^
+".\..\MyCode\LCD\HT61666_LCD.c", line 373: Error:  #260-D: explicit type is missing ("int" assumed)
+  				HT1621_WriteData4Bit(addr1, Screen_Data_F);
+  				^
+".\..\MyCode\LCD\HT61666_LCD.c", line 373: Error:  #92: identifier-list parameters may only be used in a function definition
+  				HT1621_WriteData4Bit(addr1, Screen_Data_F);
+  				^
+".\..\MyCode\LCD\HT61666_LCD.c", line 374: Error:  #40: expected an identifier
+  				HT1621_WriteData4Bit(addr2,(Screen_Data_B+Screen_Data_C+Screen_Data_G+Data_P_Flag+Data_MHz_Flag));
+  				                           ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 374: Error:  #260-D: explicit type is missing ("int" assumed)
+  				HT1621_WriteData4Bit(addr2,(Screen_Data_B+Screen_Data_C+Screen_Data_G+Data_P_Flag+Data_MHz_Flag));
+  				^
+".\..\MyCode\LCD\HT61666_LCD.c", line 374: Error:  #92: identifier-list parameters may only be used in a function definition
+  				HT1621_WriteData4Bit(addr2,(Screen_Data_B+Screen_Data_C+Screen_Data_G+Data_P_Flag+Data_MHz_Flag));
+  				^
+".\..\MyCode\LCD\HT61666_LCD.c", line 375: Error:  #169: expected a declaration
+  		break;			
+  		^
+".\..\MyCode\LCD\HT61666_LCD.c", line 377: Error:  #169: expected a declaration
+  		case 5: 
+  		^
+".\..\MyCode\LCD\HT61666_LCD.c", line 379: Error:  #40: expected an identifier
+  				HT1621_WriteData4Bit(addr2,0);  
+  				                           ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 379: Error:  #260-D: explicit type is missing ("int" assumed)
+  				HT1621_WriteData4Bit(addr2,0);  
+  				^
+.\..\MyCode\LCD\HT61666_LCD.c: 5 warnings, 30 errors
+
+[2024-05-16 14:49:22]	[done]
+	build successfully !
+
+[2024-05-16 15:28:31]	[done]
+	build successfully !
+
+[2024-05-17 09:33:31]	compilation failed at : "c:\Users\IBM\Desktop\PT50摩托车四缸平衡仪表\模组驱动\STM32F103coding - V3\MyCode\LCD\HT61666_LCD.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I../MyCode/LCD -I"RTE/_Target 1" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.d" .\..\MyCode\LCD\HT61666_LCD.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\MyCode\LCD\HT61666_LCD.h", line 88: Warning:  #47-D: incompatible redefinition of macro "Screen_Data_REC"  (declared at line 17)
+  #define 	Screen_Data_REC					0x10  // pin20	 REC
+          	^
+".\..\MyCode\LCD\HT61666_LCD.c", line 241: Error:  #117: non-void function "LCD_DeviceID"  should return a value
+  			return ;
+  			       ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 236: Warning:  #177-D: variable "addr"  was declared but never referenced
+  	uint8_t addr = 0,i = 0;
+  	        ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 287: Warning:  #223-D: function "vTaskDelay" declared implicitly
+  		vTaskDelay( 200 );
+  		^
+.\..\MyCode\LCD\HT61666_LCD.c: 3 warnings, 1 error
+
+[2024-05-17 09:34:41]	compilation failed at : "c:\Users\IBM\Desktop\PT50摩托车四缸平衡仪表\模组驱动\STM32F103coding - V3\MyCode\LCD\HT61666_LCD.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I../MyCode/LCD -I"RTE/_Target 1" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.d" .\..\MyCode\LCD\HT61666_LCD.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\MyCode\LCD\HT61666_LCD.c", line 241: Error:  #117: non-void function "LCD_DeviceID"  should return a value
+  			return ;
+  			       ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 236: Warning:  #177-D: variable "addr"  was declared but never referenced
+  	uint8_t addr = 0,i = 0;
+  	        ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 287: Warning:  #223-D: function "vTaskDelay" declared implicitly
+  		vTaskDelay( 200 );
+  		^
+.\..\MyCode\LCD\HT61666_LCD.c: 2 warnings, 1 error
+
+[2024-05-17 09:35:05]	compilation failed at : "c:\Users\IBM\Desktop\PT50摩托车四缸平衡仪表\模组驱动\STM32F103coding - V3\MyCode\LCD\HT61666_LCD.c", exit code: 1
+command: 
+  "c:\Keil_v5\ARM\ARMCC\bin\armcc.exe" -c --apcs=interwork -I. -I../CORE -I../STM32_FWLIB/inc -I../SYSTEM/delay -I../SYSTEM/sys -I../SYSTEM/usart -I../MyCode/led -I../MyCode/Buzzer -I../MyCode/HX711 -I../MyCode/TFT -I../MyCode/KEY -I../MyCode/FSR -I../MyCode/ADC -I../MyCode -I../MyCode/LCD -I"RTE/_Target 1" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER --cpu Cortex-M3 --li --c99 -D__MICROLIB -O0 --split_sections --diag_suppress=1 --diag_suppress=1295 -g -o ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.o" --no_depend_system_headers --depend ".\build\Target 1\.obj\__\MyCode\LCD\HT61666_LCD.d" .\..\MyCode\LCD\HT61666_LCD.c
+   at unify_builder.Program.Main(String[] args_)
+---
+".\..\MyCode\LCD\HT61666_LCD.h", line 88: Warning:  #47-D: incompatible redefinition of macro "Screen_Data_REC"  (declared at line 17)
+  #define 	Screen_Data_REC					0x10  // pin20	 REC
+          	^
+".\..\MyCode\LCD\HT61666_LCD.c", line 241: Error:  #117: non-void function "LCD_DeviceID"  should return a value
+  			return ;
+  			       ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 236: Warning:  #177-D: variable "addr"  was declared but never referenced
+  	uint8_t addr = 0,i = 0;
+  	        ^
+".\..\MyCode\LCD\HT61666_LCD.c", line 287: Warning:  #223-D: function "vTaskDelay" declared implicitly
+  		vTaskDelay( 200 );
+  		^
+.\..\MyCode\LCD\HT61666_LCD.c: 3 warnings, 1 error
+
+[2024-05-17 09:35:41]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6218E: Undefined symbol vTaskDelay (referred from HT61666_LCD.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2024-05-17 09:40:34]	[done]
+	build successfully !
+
+[2024-05-17 10:23:52]	[done]
+	build successfully !
+
+[2024-05-17 11:55:33]	[done]
+	build successfully !
+
+[2024-05-17 11:56:50]	[done]
+	build successfully !
+
+[2024-05-17 12:00:05]	[done]
+	build successfully !
+
+[2024-05-17 12:05:02]	[done]
+	build successfully !
+
+[2024-05-17 13:34:27]	[done]
+	build successfully !
+
+[2024-05-22 10:58:24]	[done]
+	build successfully !
+
+[2024-05-22 10:58:47]	[done]
+	build successfully !
+
+[2024-05-22 10:59:25]	[done]
+	build successfully !
+
+[2024-05-22 14:42:15]	[done]
+	build successfully !
+

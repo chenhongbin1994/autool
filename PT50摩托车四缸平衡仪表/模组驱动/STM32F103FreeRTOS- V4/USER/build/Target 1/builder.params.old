@@ -1,0 +1,126 @@
+{
+    "name": "main",
+    "target": "Target 1",
+    "toolchain": "AC5",
+    "toolchainLocation": "c:\\Keil_v5\\ARM\\ARMCC",
+    "toolchainCfgFile": "c:\\Users\\IBM\\.vscode\\extensions\\cl.eide-3.16.1\\res\\data\\models\\win32/arm.v5.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 8,
+    "rootDir": "c:\\Users\\IBM\\Desktop\\PT50摩托车四缸平衡仪表\\模组驱动\\STM32F103coding - V5_mid\\USER",
+    "dumpPath": "build\\Target 1",
+    "outDir": "build\\Target 1",
+    "ram": 20480,
+    "rom": 65536,
+    "incDirs": [
+        ".",
+        "../CORE",
+        "../STM32_FWLIB/inc",
+        "../SYSTEM/delay",
+        "../SYSTEM/sys",
+        "../SYSTEM/usart",
+        "../MyCode/led",
+        "../MyCode/Buzzer",
+        "../MyCode/HX711",
+        "../MyCode/TFT",
+        "../MyCode/KEY",
+        "../MyCode/FSR",
+        "../MyCode/ADC",
+        "../MyCode",
+        "../MyCode/LCD",
+        "RTE/_Target 1"
+    ],
+    "libDirs": [],
+    "defines": [
+        "STM32F10X_MD",
+        "USE_STDPERIPH_DRIVER"
+    ],
+    "sourceList": [
+        "../CORE/core_cm3.c",
+        "../CORE/startup_stm32f10x_md.s",
+        "../MyCode/ADC/adc.c",
+        "../MyCode/LCD/HT61666_LCD.c",
+        "../MyCode/oled.c",
+        "../STM32_FWLIB/src/misc.c",
+        "../STM32_FWLIB/src/stm32f10x_adc.c",
+        "../STM32_FWLIB/src/stm32f10x_flash.c",
+        "../STM32_FWLIB/src/stm32f10x_gpio.c",
+        "../STM32_FWLIB/src/stm32f10x_i2c.c",
+        "../STM32_FWLIB/src/stm32f10x_rcc.c",
+        "../STM32_FWLIB/src/stm32f10x_spi.c",
+        "../STM32_FWLIB/src/stm32f10x_usart.c",
+        "../SYSTEM/delay/delay.c",
+        "../SYSTEM/sys/sys.c",
+        "../SYSTEM/usart/usart.c",
+        "main.c",
+        "stm32f10x_it.c",
+        "system_stm32f10x.c"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1715598796309.8035,
+    "options": {
+        "version": 4,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [
+            {
+                "name": "C:\\Keil_v5\\ARM\\ARMCC\\bin\\fromelf.exe    --bin -o  ..\\OBJ\\22.bin ..\\OBJ\\aa.axf",
+                "command": "cd .\\. && C:\\Keil_v5\\ARM\\ARMCC\\bin\\fromelf.exe    --bin -o  ..\\OBJ\\22.bin ..\\OBJ\\aa.axf",
+                "disable": false,
+                "abortAfterFailed": true
+            }
+        ],
+        "global": {
+            "use-microLIB": true,
+            "output-debug-info": "enable",
+            "microcontroller-cpu": "cortex-m3",
+            "microcontroller-fpu": "cortex-m3",
+            "microcontroller-float": "cortex-m3",
+            "target": "cortex-m3"
+        },
+        "c/cpp-compiler": {
+            "optimization": "level-0",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "warnings": "unspecified"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "output-format": "elf",
+            "xo-base": "",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000",
+            "link-scatter": [
+                "\"c:/Users/IBM/Desktop/PT50摩托车四缸平衡仪表/模组驱动/STM32F103coding - V5_mid/USER/build/Target 1/main.sct\""
+            ]
+        }
+    },
+    "env": {
+        "workspaceFolder": "c:\\Users\\IBM\\Desktop\\PT50摩托车四缸平衡仪表\\模组驱动\\STM32F103coding - V5_mid\\USER",
+        "workspaceFolderBasename": "USER",
+        "OutDir": "c:\\Users\\IBM\\Desktop\\PT50摩托车四缸平衡仪表\\模组驱动\\STM32F103coding - V5_mid\\USER\\build\\Target 1",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Target 1",
+        "ProjectName": "main",
+        "ConfigName": "Target 1",
+        "ProjectRoot": "c:\\Users\\IBM\\Desktop\\PT50摩托车四缸平衡仪表\\模组驱动\\STM32F103coding - V5_mid\\USER",
+        "ExecutableName": "c:\\Users\\IBM\\Desktop\\PT50摩托车四缸平衡仪表\\模组驱动\\STM32F103coding - V5_mid\\USER\\build\\Target 1\\main",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "ToolchainRoot": "c:\\Keil_v5\\ARM\\ARMCC"
+    },
+    "sha": {
+        "c/cpp-defines": "027389b7b866f9fa1f0a13b7ed44782c",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "1757c3e8258858eef6c02ffdcb171eb6",
+        "global": "cab97363c56a7cd5c4d6d683dfcaa9f9",
+        "c/cpp-compiler": "3bdd97cf3ff0eb5da37fc09730eca50d",
+        "asm-compiler": "99914b932bd37a50b983c5e7c90ae93b",
+        "linker": "da4e63c71dfcf6d9750166c243ed828b"
+    }
+}
