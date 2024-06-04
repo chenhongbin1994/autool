@@ -1,0 +1,6 @@
+r
+halt
+loadfile "c:\Users\IBM\Desktop\PT50_stmf103_V2\Project\build\PT50_STM32F103RC\PT50_STM32F103RC.hex"
+r
+go
+exit
