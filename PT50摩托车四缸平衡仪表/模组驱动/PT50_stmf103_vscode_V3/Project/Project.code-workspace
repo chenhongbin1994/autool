@@ -1,0 +1,37 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "hide-files.files": [
+            "Listings",
+            "build/PT50_STM32F103RC",
+            ".eide",
+            "build",
+            ".cmsis/include",
+            ".cmsis",
+            "DebugConfig"
+        ],
+        "cortex-debug.variableUseNaturalFormat": true
+    },
+    "extensions": {},
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "./bin/executable.elf",
+            "name": "Debug with ST-Link",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "stlink"
+        }
+            
+
+        ]
+    }
+}
