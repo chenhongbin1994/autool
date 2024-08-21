@@ -1,4 +1,0 @@
-arm-none-eabi-objcopy --update-section ER_IROM1="c:\Users\IBM\Desktop\PT50_stmf103_V2\Project\build\PT50_STM32F103RC\PT50_STM32F103RC.bin" "c:\Users\IBM\Desktop\PT50_stmf103_V2\Project\build\PT50_STM32F103RC\PT50_STM32F103RC.axf" "c:\Users\IBM\Desktop\PT50_stmf103_V2\Project\build\PT50_STM32F103RC\PT50_STM32F103RC.elf"
-
-arm-none-eabi-objcopy: c:\Users\IBM\Desktop\PT50_stmf103_V2\Project\build\PT50_STM32F103RC\PT50_STM32F103RC.elf: warning: allocated section `RW_IRAM1' not in segment
-

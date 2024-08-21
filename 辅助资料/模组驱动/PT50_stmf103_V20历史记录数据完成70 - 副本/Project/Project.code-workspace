@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "hide-files.files": [],
+        "files.associations": {
+            "digit.h": "c",
+            "key_handler.h": "c",
+            "stmflash.h": "c",
+            "stm32f10x_flash.h": "c"
+        }
+    },
+    "extensions": {}
+}

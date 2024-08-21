@@ -1,0 +1,130 @@
+  /*
+ * @Author: ChenHongBin 944278386@qq.com
+ * @Date: 2024-06-05 22:26:51
+ * @LastEditors: ChenHongBin 944278386@qq.com
+ * @LastEditTime: 2024-07-10 21:32:58
+ * @FilePath: \Projectc:\Users\IBM\Desktop\PT50project\PT50_stmf103_vscode_V5\App\main.c
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+/*********************************************************************************
+  * 文件名  ：main.c
+ * 描述    ：        
+ * 硬件连接：
+ * 4针OLED：GND -> GND; VCC -> 3.3V; SCL -> PC4; SDA -> PC5;
+ * 压力传感器1：VCC -> 5V; GND -> GND; AO -> PA0; 
+ * 压力传感器2：VCC -> 5V; GND -> GND; AO -> PA2; 
+ * USB转串口模块：GND -> GND; RX -> PA9; TX -> PA10; 
+ * 功能描述：测量气压值HT1625断码屏显示；
+             串口接收测量所得的气压值（波特率115200）；
+   使用时先进行零点和满量程校准，依据校准值调整 Voltage_0   Voltage_40 
+**********************************************************************************/
+#include "includes.h"
+
+
+#if 1
+/*-------------------------------测试用-------------------------------------*/
+
+extern volatile    u8   Flag_o5s_Disp,flag_10ms,Battery_ADCflag,Clock_flag;
+extern volatile u8 LCD_BUF[48];
+
+extern uint16_t ADC_Value[4];
+
+
+/*-------------------------------测试用-------------------------------------*/
+
+
+/*--------------------------Mycode-------------------------------*/
+//初始化
+void Usb_Init(void)
+{
+	USB_Port_Set(0); 	//USB先断开
+	delay_ms(100);
+	USB_Port_Set(1);	//USB再次连接
+ 	Set_USBClock();   
+ 	USB_Interrupts_Config();    
+ 	USB_Init();	    	
+}
+//测试app
+
+
+/*--------------------------Mycode-------------------------------*/
+
+//要写入到STM32 FLASH的字符串数组
+const u8 TEXT_Buffer[]={"STM32F103 FLASH TEST"};
+#define SIZE sizeof(TEXT_Buffer)		//数组长度
+#define FLASH_SAVE_ADDR  0X08070000		//设置FLASH 保存地址(必须为偶数，且其值要大于本代码所占用FLASH的大小+0X08000000)
+
+
+/*--------------------------Mycode-------------------------------*/
+void Mcu_Init(void)
+{
+  /* system init */
+	//SCB->VTOR = FLASH_BASE | 0x10000; /* Vector Table Relocation in Internal FLASH. */
+	SystemInit();
+  	delay_init();	
+  	NVIC_Configuration();
+  	uart_init(115200);
+	Battery_Init();//电池电压检测和EN_OUT初始化
+	Usb_Init();//USB初始化
+	ADC_Init_t();
+  	Buzzer_Init();//引脚定义PA0，与ADC_0通道冲突
+  	TIM3_Int_Init(50-1,7200-1); //TIM3_Int_Init(200-1,7200-1);调用定时器使得20ms产生一个中断，TIM3_Int_Init(49, 7199); // 5ms中断；TIM3_Int_Init(4999,7199);//10Khz的计数频率，计数到5000为500ms  
+	KEY_Init();
+	
+}
+
+
+
+int main(void)
+{			
+/*-------------------------------变量测试用-------------------------------------*/
+	u8 datatemp[SIZE];
+/*-------------------------------变量测试用-------------------------------------*/
+		Mcu_Init();	 		
+		LCD_Init();//部分图标初始化
+		
+
+		//ADC2_Init();
+
+		printf("----------------in development-------------\n");
+			printf("write\n");
+			STMFLASH_Write(FLASH_SAVE_ADDR,(u16*)TEXT_Buffer,SIZE);
+			printf("FLASH Write Finished!\n");
+
+	
+			STMFLASH_Read(FLASH_SAVE_ADDR,(u16*)datatemp,SIZE);
+			printf("read = %s \n",datatemp);
+	while(1)
+	{
+		//calculateBatteryVoltage(5);
+		if(Flag_o5s_Disp == 1){
+			Flag_o5s_Disp = 0;
+			ProcessAndDisplayPressureValues(1.45, 0.0125);//四缸压力显示
+		}	
+
+				
+		if(Battery_ADCflag == 1)//6v电源电压检测,开机等5S才显示，待解决
+		{
+			Battery_ADCflag = 0;
+			calculateBatteryVoltage(5);
+		}
+		if(Clock_flag == 1)//
+		{
+			Clock_flag = 0;	
+			Clock();
+		}
+		//delay_ms(1000);
+
+    }
+}
+#endif
+
+
+
+
+
+
+
+
+
+

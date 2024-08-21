@@ -1,0 +1,17 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "Listings": true,
+        "build/PT50_STM32F103RC": true,
+        ".eide": true,
+        "build": true,
+        ".cmsis/include": true,
+        ".cmsis": true,
+        "DebugConfig": true
+    }
+}

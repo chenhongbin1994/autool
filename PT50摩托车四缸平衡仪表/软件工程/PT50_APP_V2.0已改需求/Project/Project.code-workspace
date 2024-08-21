@@ -1,0 +1,23 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "hide-files.files": [],
+        "files.associations": {
+            "digit.h": "c",
+            "key_handler.h": "c",
+            "delay.h": "c",
+            "timer.h": "c",
+            "sys.h": "c",
+            "key.h": "c",
+            "stm32f10x_tim.h": "c",
+            "lcd_ht1623.h": "c",
+            "battery.h": "c",
+            "stm32f10x.h": "c"
+        }
+    },
+    "extensions": {}
+}

@@ -1,0 +1,175 @@
+/*
+ * @Author: ChenHongBin 944278386@qq.com
+ * @Date: 2024-06-05 22:26:51
+ * @LastEditors: ChenHongBin 944278386@qq.com
+ * @LastEditTime: 2024-06-19 10:34:21
+ * @FilePath: \Projectc:\Users\IBM\Desktop\PT50project\PT50_stmf103_vscode_V5\MyCode\ADC\adc.c
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
+#include "adc.h"
+#include "delay.h"
+#include "usart.h"
+
+
+#define ADC1_DR_Address    ((u32)0x40012400+0x4c)
+
+
+uint16_t ADC_ConvertedValue[Sample_Num][Channel_Num];
+u16 AD_After_Filter[Channel_Num];
+
+
+
+//初始化ADC
+//这里我们仅以规则通道为例
+void  ADC1_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStructure;
+  DMA_InitTypeDef DMA_InitStructure;
+  ADC_InitTypeDef ADC_InitStructure;
+
+  /* Enable DMA clock */
+  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1, ENABLE);
+  /* Enable ADC1 and GPIOA clock */
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1 | RCC_APB2Periph_GPIOA, ENABLE);
+  RCC_ADCCLKConfig(RCC_PCLK2_Div6);   //设置ADC分频因子6 72M/6=12,ADC最大时间不能超过14M
+
+  //PA0/PA1/PA2/PA3/PA4/PA5 作为模拟通道输入引脚
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;		//模拟输入引脚
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+  GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+
+
+  /* DMA channel1 configuration */
+  DMA_DeInit(DMA1_Channel1);	//DMA1的通道1
+  DMA_InitStructure.DMA_PeripheralBaseAddr = ADC1_DR_Address;	 //ADC地址
+  DMA_InitStructure.DMA_MemoryBaseAddr = (u32)&ADC_ConvertedValue;	//内存地址
+  DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralSRC;	//外设为数据源：数据传输方向，从外设发送到内存
+  DMA_InitStructure.DMA_BufferSize = Sample_Num*Channel_Num;//保存了DMA要传输的数据总大小，
+  DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;//外设地址寄存器固定
+  DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;  //内存地址寄存器自增
+  DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;	//外设数据单位，半字16位
+  DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;	//内设数据单位，数据宽度为半字16位
+  DMA_InitStructure.DMA_Mode = DMA_Mode_Normal;	//DMA_Mode_Circular;//工作在循环缓存模式
+  //DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;//工作在循环缓存模式
+  DMA_InitStructure.DMA_Priority = DMA_Priority_High;
+  DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;	//禁止内存到内存的传输
+  DMA_Init(DMA1_Channel1, &DMA_InitStructure);	//
+
+  /* Enable DMA channel1 */
+  DMA_Cmd(DMA1_Channel1, ENABLE);
+
+
+  /* ADC1 configuration */
+  ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;	//独立ADC模式
+  ADC_InitStructure.ADC_ScanConvMode = ENABLE ; 	 //扫描模式用于多通道采集
+  //ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;	//不开启连续转换模式，即不连续进行ADC转换
+  ADC_InitStructure.ADC_ContinuousConvMode = ENABLE;	//开启连续转换模式，即不停地进行ADC转换
+  ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;	//不使用外部触发转换
+  ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right; 	//采集数据右对齐
+  ADC_InitStructure.ADC_NbrOfChannel = 4;	 	//要转换的通道数目1
+  ADC_Init(ADC1, &ADC_InitStructure);
+
+
+  /*配置ADC1的通道0-4为239.5个采样周期，序列为1 */
+  ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_239Cycles5 );	//ADC1,ADC通道0,采样时间为239.5周期
+  ADC_RegularChannelConfig(ADC1, ADC_Channel_1, 2, ADC_SampleTime_239Cycles5 );	//ADC1,ADC通道1,采样时间为239.5周期
+  ADC_RegularChannelConfig(ADC1, ADC_Channel_2, 3, ADC_SampleTime_239Cycles5 );	//ADC1,ADC通道2,采样时间为239.5周期
+  ADC_RegularChannelConfig(ADC1, ADC_Channel_3, 4, ADC_SampleTime_239Cycles5 );	//ADC1,ADC通道3,采样时间为239.5周期
+
+
+  ADC_DMACmd(ADC1, ENABLE);	// Enable ADC1 DMA
+  ADC_Cmd(ADC1, ENABLE);	// Enable ADC1
+
+  ADC_ResetCalibration(ADC1);	//复位校准寄存器
+  while(ADC_GetResetCalibrationStatus(ADC1));	//等待校准寄存器复位完成
+  ADC_StartCalibration(ADC1);	//ADC校准
+  while(ADC_GetCalibrationStatus(ADC1));	//等待校准完成
+
+  ADC_SoftwareStartConvCmd(ADC1, ENABLE);	// 由于没有采用外部触发，所以使用软件触发ADC转换
+}
+
+
+u16 Read_ADC_AverageValue(u16 Channel)
+{
+  u8 t;
+  u32 sum = 0;
+
+  //完成一次DMA传输，数据大小10*5
+  DMA_SetCurrDataCounter(DMA1_Channel1,Sample_Num*Channel_Num);				//设置DMA的传送数量为10*5
+  DMA_Cmd(DMA1_Channel1,ENABLE);
+  ADC_SoftwareStartConvCmd(ADC1, ENABLE);					//使用软件转换启动功能
+  while(DMA_GetFlagStatus(DMA1_FLAG_TC1)!=SET);			//等待DMA传送完成
+  DMA_ClearFlag(DMA1_FLAG_TC1);							//清除DMA传送完成标志
+  // DMA_Cmd(DMA1_Channel1,DISABLE);
+  // ADC_SoftwareStartConvCmd(ADC1, DISABLE);
+
+  for(t=0; t<Sample_Num; t++)
+  {
+    sum += ADC_ConvertedValue[t][Channel];
+  }
+  AD_After_Filter[Channel] = sum/Sample_Num;
+  sum = 0;
+	delay_ms(5);
+
+    DMA_Cmd(DMA1_Channel1,DISABLE);
+  ADC_SoftwareStartConvCmd(ADC1, DISABLE);
+  return AD_After_Filter[Channel];
+  
+}
+
+
+
+
+#if 1
+/*--------------------------------电源电压管理----------------------------------*/
+void ADC2_Init(void)
+{
+  GPIO_InitTypeDef GPIO_InitStruct;
+  ADC_InitTypeDef  ADC_InitStruct;
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC2|RCC_APB2Periph_GPIOB, ENABLE);//开时钟
+  RCC_ADCCLKConfig(RCC_PCLK2_Div6);//ADC时钟分频
+
+  GPIO_InitStruct.GPIO_Mode =GPIO_Mode_AIN;	//模拟输入
+  GPIO_InitStruct.GPIO_Pin  =GPIO_Pin_0;     	//设置引脚	PB0	系统供电(6V)采样脚
+  GPIO_Init(GPIOB, &GPIO_InitStruct);         //初始化
+
+//	GPIO_InitStruct.GPIO_Mode =GPIO_Mode_AIN;	//模拟输入
+//    GPIO_InitStruct.GPIO_Pin  =GPIO_Pin_4;     	//设置引脚	PC4 纽扣电池采样脚
+//    GPIO_Init(GPIOC, &GPIO_InitStruct);         //初始化
+
+  ADC_InitStruct.ADC_ContinuousConvMode= DISABLE;//单次转换
+  ADC_InitStruct.ADC_DataAlign         = ADC_DataAlign_Right;//右对齐
+  ADC_InitStruct.ADC_Mode              = ADC_Mode_Independent;//独立模式
+  ADC_InitStruct.ADC_ScanConvMode      = DISABLE;//非扫描
+  ADC_InitStruct.ADC_NbrOfChannel      = 1;//单通道切换
+  ADC_InitStruct.ADC_ExternalTrigConv  = ADC_ExternalTrigConv_None;//软件
+  ADC_Init(ADC1, &ADC_InitStruct);
+  ADC_Cmd(ADC2, ENABLE);
+  ADC_ResetCalibration(ADC2);//复位校准
+  while(ADC_GetResetCalibrationStatus(ADC2));//等待复位完成
+  ADC_StartCalibration(ADC2);  //开启校准
+  while(ADC_GetCalibrationStatus(ADC2));//等待校准结束
+}
+
+
+u16 ADC2_GetValue(u8 channel)
+{
+  ADC_RegularChannelConfig(ADC2, channel, 1, ADC_SampleTime_239Cycles5);
+  ADC_SoftwareStartConvCmd(ADC2, ENABLE);//启动软件转换
+  ADC_Cmd(ADC2, ENABLE);
+  while(!ADC_GetFlagStatus(ADC2, ADC_FLAG_EOC));//等待转换结束
+  return ADC_GetConversionValue(ADC2);
+}
+
+/*--------------------------------电源电压管理----------------------------------*/
+#endif
+
+
+
+
+
+
+
+
